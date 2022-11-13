@@ -1,0 +1,18 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    margin: 0px;
+    font-family: 'Roboto';
+}
+.hero{
+    text-align: center;
+    margin-top: 350px;
+}
+.hero h1{
+    opacity: 0.5;
+    font-size: 60px;
+    font-family: "Inconsolata";
+}

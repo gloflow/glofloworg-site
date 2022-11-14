@@ -9,9 +9,15 @@ body {
 	margin-right: 10.2vw;
 	margin-top: 150px;
 }
-
+.section{
+	margin-bottom: 50px;
+}
 .section_title{
 	text-transform: uppercase;
+	font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+	margin-bottom: 5px;
 }
 
 .file{
@@ -20,8 +26,13 @@ body {
 
 .file a{
     color: rgb(16, 14, 14);
+	text-transform: capitalize;
+	text-decoration: none;
+	font-size: 16px;
+    opacity: 0.9;
 }
 .file a:hover{
     color: #d87205;
 	cursor: pointer;
+	text-decoration: underline;
 }

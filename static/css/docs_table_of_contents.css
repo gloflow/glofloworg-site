@@ -1,10 +1,27 @@
 body {
-	margin:      0px;
+	margin: 0;
+	padding: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
-	/*turn off horizontal scroll*/
-	max-width:  100%;
-    overflow-x: hidden;
+.sections{
+	margin-left: 10.2vw;
+	margin-right: 10.2vw;
+	margin-top: 150px;
+}
 
-	background-color: #d7d7d7;
+.section_title{
+	text-transform: uppercase;
+}
+
+.file{
+	padding-top: 10px;
+}
+
+.file a{
+    color: rgb(16, 14, 14);
+}
+.file a:hover{
+    color: #d87205;
+	cursor: pointer;
 }

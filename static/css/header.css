@@ -1,13 +1,10 @@
 
-  .gloflow{
-    margin-right: 10.2vw;
-    margin-left: 10.2vw;
-  }
   .nav {
     margin-top: 10px;
     height: 40px;
-    width: 100%;
     position: relative;
+    margin-right: 10.2vw;
+    margin-left: 10.2vw;
   }
   
   .nav > .header {

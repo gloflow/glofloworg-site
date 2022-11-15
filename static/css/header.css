@@ -59,15 +59,19 @@
   
   @media screen and (max-width:720px) {
     .nav {
-      margin-left: 40px;
-      margin-right: 40px;
+      margin-left: 0px;
+      margin-right: 0px;
       z-index: 100;
+    }
+    .nav > .header{
+      margin-left: 40px;
     }
     .nav > .nav_btn {
       display: inline-block;
       position: absolute;
       right: -12px;
       top: 0px;
+      margin-right: 40px;
     }
     .icon h1{
         margin-left: 2vw;
@@ -106,9 +110,10 @@
     }
     .nav > .nav_links > a {
       display: block;
-      width: 100%;
       padding-left: 0px;
-      border-bottom: 3px solid #000;
+      border-bottom: 3px solid #d08b3e14;
+      margin-left: 40px;
+      margin-right: 40px;
     }
     .nav > .nav_links > a:hover {
         text-decoration: none;

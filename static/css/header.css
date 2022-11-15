@@ -10,6 +10,9 @@
   .nav > .header {
     display: inline;
   }
+  .nav > .header > a{
+    text-decoration: none;
+  }
   .icon{
     display: flex;
     flex-direction: row;
@@ -19,6 +22,7 @@
     font-family: "Inconsolata";
     font-size: 28px ;
     margin-left: 1vw;
+    color: black;
   }
   .nav > .header{
     display: inline-block;
@@ -26,9 +30,9 @@
     color: rgb(16, 14, 14);
   }
 
-.icon img{
-    height: 40px;
-}
+  .icon img{
+      height: 40px;
+  }
   .nav > .nav_btn {
     display: none;
   }
@@ -38,19 +42,27 @@
     float: right;
     font-size: 16px;
   }
-  
   .nav > .nav_links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: rgb(16, 14, 14);
   }
-
+  .nav > .nav_links > a:hover {
+    text-underline-offset: 3px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
   .nav > #nav_check {
     display: none;
   }
   
-  @media (max-width:720px) {
+  @media screen and (max-width:720px) {
+    .nav {
+      margin-left: 40px;
+      margin-right: 40px;
+      z-index: 100;
+    }
     .nav > .nav_btn {
       display: inline-block;
       position: absolute;
@@ -60,11 +72,11 @@
     .icon h1{
         margin-left: 2vw;
     }
-    .nav > .nav-btn:hover {
+    .nav > .nav_btn:hover {
         cursor: pointer;
     }
     div.nav_links > a:nth-of-type(odd) {
-        background: #fff3eb;
+        background: #ffffff;
     }
     .nav > .nav_btn > label {
       display: inline-block;
@@ -73,19 +85,19 @@
       padding: 13px;
     }
     .nav > .nav_btn > label:hover,.nav  #nav_check:checked ~ .nav_btn > label {
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: #ffffff;
     }
     .nav > .nav_btn > label > span {
       display: block;
       width: 25px;
-      height: 10px;
-      border-top: 2px solid rgb(16, 16, 16);
+      height: 7px;
+      border-top: 3px solid rgb(16, 16, 16);
     }
     .nav > .nav_links {
       position: absolute;
       display: block;
       width: 100%;
-      background-color:#fbe9dd;
+      background-color:#ffffff;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
@@ -95,10 +107,13 @@
     .nav > .nav_links > a {
       display: block;
       width: 100%;
+      padding-left: 0px;
+      border-bottom: 3px solid #000;
     }
     .nav > .nav_links > a:hover {
-        text-decoration: underline;
-      }
+        text-decoration: none;
+        padding-left: 10px;
+    }
     .nav > #nav_check:not(:checked) ~ .nav_links {
       height: 0px;
     }
@@ -106,5 +121,9 @@
       height: auto; /*calc(100vh - 50px);*/
       overflow-y: auto;
       margin-top: 10px;
+      padding-bottom: 10px;
+    }
+    #last{
+      border-bottom: 0px solid #000;
     }
   }

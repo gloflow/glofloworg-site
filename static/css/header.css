@@ -1,10 +1,11 @@
 
   .nav {
-    margin-top: 10px;
-    height: 40px;
+    margin-top: 0px;
+    height: 80px;
     position: relative;
     margin-right: 10.2vw;
     margin-left: 10.2vw;
+    padding-top: 20px;
   }
   
   .nav > .header {
@@ -31,7 +32,7 @@
   }
 
   .icon img{
-      height: 40px;
+    height: 40px;
   }
   .nav > .nav_btn {
     display: none;
@@ -40,18 +41,22 @@
   .nav > .nav_links {
     display: inline;
     float: right;
-    font-size: 16px;
+    list-style-type: none;
+    font-size: .875rem;
+    line-height: 1.6;
+    font-weight: 400;
   }
   .nav > .nav_links > a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
+    padding: 10px 10px 10px 10px;
     text-decoration: none;
     color: rgb(16, 14, 14);
   }
   .nav > .nav_links > a:hover {
     text-underline-offset: 3px;
     text-decoration: underline;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1px;
+    color: #dd8328;
   }
   .nav > #nav_check {
     display: none;

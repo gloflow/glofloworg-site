@@ -1,0 +1,52 @@
+a{
+    color: #dd8328;
+}
+
+.footer{
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, auto);
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-right: 10.2vw;
+    margin-left: 10.2vw;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.footer_headline{
+    font-family: "Inconsolata";
+    line-height: 1.6;
+    margin-top: 1.14em;
+    margin-bottom: 1.14em;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.footer_section{
+    padding-right: 50px;
+}
+.list{
+    list-style-type: none;
+    font-size: .875rem;
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+.footer_link{
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:720px) {
+    .footer {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .footer {
+        grid-template-columns: auto;
+    }
+}

@@ -1,5 +1,5 @@
 a{
-    color: #dd8328;
+    color: #a6a6a6;
 }
 
 .footer{
@@ -35,11 +35,22 @@ a{
     margin: 0px;
     padding: 0px;
 }
+li{
+    display: flex;
+    flex-direction: row;
+}
 .footer_link{
     margin-bottom: 1rem;
 }
-
-@media screen and (max-width:720px) {
+.soc_icon{
+    margin-left: 10px;
+}
+.soc_icon img{
+    height: auto;
+    width: 1rem;
+    margin-top: 3px;
+}
+@media screen and (max-width:730px) {
     .footer {
         grid-template-columns: repeat(2, auto);
     }

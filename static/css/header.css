@@ -56,27 +56,30 @@
     text-underline-offset: 3px;
     text-decoration: underline;
     text-decoration-thickness: 1px;
-    color: #dd8328;
+    color: #a6a6a6;
   }
   .nav > #nav_check {
     display: none;
   }
   
-  @media screen and (max-width:720px) {
+  @media screen and (max-width:730px) {
     .nav {
       margin-left: 0px;
       margin-right: 0px;
       z-index: 100;
     }
+    .nav:hover{
+      cursor: pointer;
+    }
     .nav > .header{
-      margin-left: 40px;
+      margin-left: 10.2vw;
     }
     .nav > .nav_btn {
       display: inline-block;
       position: absolute;
       right: -12px;
-      top: 0px;
-      margin-right: 40px;
+      top: 20px;
+      margin-right: 10.2vw;
     }
     .icon h1{
         margin-left: 2vw;
@@ -110,15 +113,15 @@
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
-      top: 50px;
+      top: 70px;
       left: 0px;
     }
     .nav > .nav_links > a {
       display: block;
       padding-left: 0px;
-      border-bottom: 3px solid #d08b3e14;
-      margin-left: 40px;
-      margin-right: 40px;
+      border-bottom: 2px solid #a6a6a665;
+      margin-left: 10.2vw;
+      margin-right: 10.2vw;
     }
     .nav > .nav_links > a:hover {
         text-decoration: none;
@@ -130,7 +133,7 @@
     .nav > #nav_check:checked ~ .nav_links {
       height: auto; /*calc(100vh - 50px);*/
       overflow-y: auto;
-      margin-top: 10px;
+      margin-top: 0px;
       padding-bottom: 10px;
     }
     #last{

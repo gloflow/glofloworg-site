@@ -1,5 +1,14 @@
-body {
+body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+#github_issues{
+    margin: 80px 6.2vw;
 }

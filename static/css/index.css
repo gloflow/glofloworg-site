@@ -34,3 +34,21 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+
+#dev_section {
+    margin-left: 50px;
+    margin-top: 10px;
+
+    text-align: center;
+    font-size: 14px;
+}
+
+#dev_section #py_install_cmd {
+    background-color: lightgray;
+}
+
+#dev_section #py_use {
+    background-color: lightgray;
+}
